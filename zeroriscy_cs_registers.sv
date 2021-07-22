@@ -34,6 +34,10 @@ import zeroriscy_defines::*;
  `endif
 `endif
 
+`ifdef ASIC_BEHAVIOR
+  `define ASIC_SYNTHESIS
+`endif
+
 module zeroriscy_cs_registers
 #(
   parameter N_EXT_CNT    = 0
